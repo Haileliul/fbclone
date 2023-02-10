@@ -45,36 +45,42 @@ class _MainState extends State<Main> {
                       "Mobile number or email ",
                       style: TextStyle(fontSize: 20),
                     ),
-                    Form(
-                      key: _emailkey,
-                      child: TextFormField(
-                        controller: _EmailController,
-                        onChanged: (value) {
-                          _emailkey.currentState?.validate();
-                        },
-                        validator: (value) {
-                          if (value!.isEmpty) {
-                            return "please Enter a phone Number";
-                          } else if (!RegExp(
-                                  r'^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$')
-                              .hasMatch(value)) {
-                            return "Please Enter A valid Number";
-                          }
-                        },
-                        decoration: InputDecoration(
-                          suffix: IconButton(
-                            onPressed: () {
-                              setState(() {
-                                _EmailController.clear();
-                              });
-                            },
-                            icon: Icon(Icons.close),
-                          ),
-                          label: Text("Enter name or Email"),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide:
-                                BorderSide(width: 1, color: Colors.blue),
-                            // borderRadius: BorderRadius.circular(50),
+                    SizedBox(
+                      height: 50,
+                      width: double.infinity,
+                      child: Form(
+                        key: _emailkey,
+                        child: TextFormField(
+                          controller: _EmailController,
+                          onChanged: (value) {
+                            _emailkey.currentState?.validate();
+                          },
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return "please Enter a phone Number";
+                            } else if (!RegExp(
+                                        r'^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$')
+                                    .hasMatch(value) ||
+                                !RegExp(r'^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$')
+                                    .hasMatch(value)) {
+                              return "Please Enter A valid Number";
+                            }
+                          },
+                          decoration: InputDecoration(
+                            suffix: IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  _EmailController.clear();
+                                });
+                              },
+                              icon: Icon(Icons.close),
+                            ),
+                            label: Text("Enter name or Email"),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(width: 1, color: Colors.blue),
+                              // borderRadius: BorderRadius.circular(50),
+                            ),
                           ),
                         ),
                       ),
@@ -83,34 +89,38 @@ class _MainState extends State<Main> {
                       "Password",
                       style: TextStyle(fontSize: 20),
                     ),
-                    Form(
-                      key: _passkey,
-                      child: TextFormField(
-                        onChanged: (value) {
-                          _passkey.currentState?.validate();
-                        },
-                        validator: (value) {
-                          if (value!.isEmpty) {
-                            return "Please Enter Password";
-                          }
-                        },
-                        controller: _Passwordontroller,
-                        decoration: InputDecoration(
-                          suffix: IconButton(
-                            onPressed: () {
-                              setState(() {
-                                _Passwordontroller.clear();
-                              });
-                            },
-                            icon: Icon(Icons.close),
-                          ),
-                          label: Text(
-                            "Enter the password",
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide:
-                                BorderSide(width: 1, color: Colors.blue),
-                            // borderRadius: BorderRadius.circular(50),
+                    SizedBox(
+                      height: 50,
+                      width: double.infinity,
+                      child: Form(
+                        key: _passkey,
+                        child: TextFormField(
+                          onChanged: (value) {
+                            _passkey.currentState?.validate();
+                          },
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return "Please Enter Password";
+                            }
+                          },
+                          controller: _Passwordontroller,
+                          decoration: InputDecoration(
+                            suffix: IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  _Passwordontroller.clear();
+                                });
+                              },
+                              icon: Icon(Icons.close),
+                            ),
+                            label: Text(
+                              "Enter the password",
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(width: 1, color: Colors.blue),
+                              // borderRadius: BorderRadius.circular(50),
+                            ),
                           ),
                         ),
                       ),
@@ -172,25 +182,39 @@ class _MainState extends State<Main> {
                     ],
                   ),
                 ),
-                Image(
-                  image: AssetImage('Assets/images/email.png'),
-                ),
-                Text(
-                  "አማርኛ",
-                  style: TextStyle(color: Colors.blue),
-                ),
-                Text(
-                  "Englishe",
-                  style: TextStyle(color: Colors.blue),
-                ),
-                Text(
-                  "Afaan Oro",
-                  style: TextStyle(color: Colors.blue),
-                ),
-                Text(
-                  "More language...",
-                  style: TextStyle(color: Colors.blue),
-                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "አማርኛ",
+                              style: TextStyle(color: Colors.black),
+                            ),
+                            Text(
+                              "Englishe",
+                              style: TextStyle(color: Colors.blue),
+                            ),
+                            Text(
+                              "Afaan Oro",
+                              style: TextStyle(color: Colors.blue),
+                            ),
+                            Text(
+                              "More language...",
+                              style: TextStyle(color: Colors.blue),
+                            ),
+                          ]),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2,
+                      child: Image(
+                        image: AssetImage('Assets/images/email.png'),
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           ),
