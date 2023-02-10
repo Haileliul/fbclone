@@ -77,9 +77,9 @@ class signup extends StatelessWidget {
                           Expanded(
                             flex: 1,
                             child: TextFormField(
-                              controller: _EmailController,
+                              controller: _Passwordontroller,
                               decoration: InputDecoration(
-                                label: Text("Enter name or Email"),
+                                label: Text("Enter Password"),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide:
                                       BorderSide(width: 1, color: Colors.blue),
