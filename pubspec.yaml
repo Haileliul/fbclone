@@ -41,6 +41,7 @@ dependencies:
   intl: ^0.17.0
   switcher_button: ^0.0.4
   google_sign_in: ^5.4.4
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
   flutter_test:

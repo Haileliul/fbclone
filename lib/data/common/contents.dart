@@ -1,3 +1,4 @@
+import 'package:demo2/data/common/yvideos.dart';
 import 'package:flutter/material.dart';
 
 class content extends StatelessWidget {
@@ -50,7 +51,8 @@ class content extends StatelessWidget {
           Container(
             height: size.height * 0.4,
             width: size.width,
-            color: Colors.pink,
+            // color: Colors.pink,
+            child: video(),
           ),
           Text(" this is the place where the text exist"),
           SizedBox(

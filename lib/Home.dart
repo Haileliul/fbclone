@@ -9,6 +9,7 @@ import 'data/Drower.dart';
 import 'package:flutter/material.dart';
 
 import './Login.dart';
+import 'data/home/search.dart';
 
 void main() => runApp(MyhomePage());
 
@@ -39,7 +40,12 @@ class _MyhomePageState extends State<MyhomePage> {
           ),
           actions: <Widget>[
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Search()),
+                );
+              },
               icon: const Icon(
                 Icons.search,
                 color: Colors.black,

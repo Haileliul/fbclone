@@ -19,7 +19,7 @@ class mystory extends StatelessWidget {
 
       // height: 80,
       // color: Colors.yellow,
-      margin: EdgeInsets.symmetric(horizontal: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 5),
       child: Column(
         children: [
           Container(
@@ -37,22 +37,23 @@ class mystory extends StatelessWidget {
           Container(
             width: double.infinity,
             child: Column(
+              // ignore: prefer_const_literals_to_create_immutables
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 1),
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 1),
                   child: Icon(
                     Icons.add_circle,
                     size: 14,
                     color: Colors.blue,
                   ),
                 ),
-                Text(
+                const Text(
                   "Add to ",
                   style: TextStyle(
                     fontSize: 10,
                   ),
                 ),
-                Text(
+                const Text(
                   "Story",
                   style: TextStyle(
                     fontSize: 10,
