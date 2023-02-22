@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import '../data/message/topscroll.dart';
@@ -77,6 +79,7 @@ class _MessageState extends State<Message> {
                   height: MediaQuery.of(context).size.height * 0.6,
                   // color: Colors.green,
                   child: Column(
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       Expanded(
                         flex: 1,

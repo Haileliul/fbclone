@@ -1,7 +1,10 @@
+// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import './Home.dart';
 import './signup.dart';
+import 'authentication.dart';
 // import 'package:get/get.dart';
 
 void main() => runApp(Main());
@@ -194,6 +197,7 @@ class _MainState extends State<Main> {
                     Container(
                       child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          // ignore: prefer_const_literals_to_create_immutables
                           children: [
                             Text(
                               "አማርኛ",
@@ -205,7 +209,7 @@ class _MainState extends State<Main> {
                             ),
                             Text(
                               "Afaan Oro",
-                              style: TextStyle(color: Colors.blue),
+                              style: const TextStyle(color: Colors.blue),
                             ),
                             Text(
                               "More language...",
@@ -215,8 +219,21 @@ class _MainState extends State<Main> {
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 2,
-                      child: Image(
-                        image: AssetImage('Assets/images/email.png'),
+                      child: InkWell(
+                        onTap: () async {
+                          User? user = await Authentication.signInWithGoogle(
+                              context: context);
+                          if (user != null) {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => MyhomePage(),
+                              ),
+                            );
+                          }
+                        },
+                        child: Image(
+                          image: AssetImage('Assets/images/email.png'),
+                        ),
                       ),
                     ),
                   ],

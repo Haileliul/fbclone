@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, sort_child_properties_last
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -33,9 +35,9 @@ class drowe extends StatelessWidget {
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
-                            icon: Icon(Icons.arrow_back),
+                            icon: const Icon(Icons.arrow_back),
                           ),
-                          Text(
+                          const Text(
                             "Menu",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 20),
@@ -61,7 +63,7 @@ class drowe extends StatelessWidget {
               flex: 15,
               child: SingleChildScrollView(
                 child: Column(children: [
-                  ListTile(
+                  const ListTile(
                     leading: CircleAvatar(
                       backgroundImage: AssetImage(
                           'Assets/images/multi-ethnic-guys-and-girls-taking-selfie-outdoors-with-backlight-happy-life-style-friendship.jpg'),
@@ -69,7 +71,7 @@ class drowe extends StatelessWidget {
                     title: Text("Haileliul Baye"),
                     subtitle: Text("View Your profile"),
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.black,
                     thickness: 1,
                     indent: 5,
@@ -91,7 +93,7 @@ class drowe extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => Main(),
+                                    builder: (context) => const Main(),
                                   ),
                                 );
                               });
@@ -102,7 +104,7 @@ class drowe extends StatelessWidget {
                               trailing: items[index]["post"],
                             ),
                           ),
-                          margin: EdgeInsets.only(bottom: 5),
+                          margin: const EdgeInsets.only(bottom: 5),
                         );
                       },
                       itemCount: items.length,

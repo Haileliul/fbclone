@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_interpolation_to_compose_strings
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -124,6 +126,7 @@ class _MarketState extends State<Market> {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        // ignore: prefer_const_literals_to_create_immutables
                         children: [
                           Text("New for you"),
                           Text(
@@ -158,6 +161,7 @@ class _MarketState extends State<Market> {
                         children: [
                           Text("Today's Picks"),
                           Row(
+                            // ignore: prefer_const_literals_to_create_immutables
                             children: [
                               Icon(Icons.navigation),
                               Text("Bahir Dar . 65 km")
@@ -186,6 +190,7 @@ class _MarketState extends State<Market> {
                                         ),
                                         ListTile(
                                           title: Row(
+                                            // ignore: prefer_const_literals_to_create_immutables
                                             children: [
                                               Icon(Icons.price_change),
                                               Text("1,500")
@@ -213,6 +218,7 @@ class _MarketState extends State<Market> {
                                         ),
                                         ListTile(
                                           title: Row(
+                                            // ignore: prefer_const_literals_to_create_immutables
                                             children: [
                                               Icon(Icons.price_change),
                                               Text("1,500")

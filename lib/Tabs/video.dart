@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import '../data/common/contents.dart';
@@ -95,6 +97,7 @@ class _VideoState extends State<Video> {
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Row(
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       Icon(Icons.live_tv),
                                       Text("For You"),
@@ -107,6 +110,7 @@ class _VideoState extends State<Video> {
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Row(
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       Icon(Icons.video_camera_back),
                                       Text("Live"),
@@ -119,6 +123,7 @@ class _VideoState extends State<Video> {
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Row(
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       Icon(Icons.check_box),
                                       Text("Following"),
@@ -131,6 +136,7 @@ class _VideoState extends State<Video> {
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Row(
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       Icon(Icons.bookmark),
                                       Text("Saved"),
@@ -143,6 +149,7 @@ class _VideoState extends State<Video> {
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Row(
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       Icon(Icons.gamepad),
                                       Text("Gamming"),
@@ -164,6 +171,7 @@ class _VideoState extends State<Video> {
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
+                                // ignore: prefer_const_literals_to_create_immutables
                                 children: [
                                   Text("Video Notifications"),
                                   Text("See All" + "(" + "21" + ")"),
@@ -174,6 +182,7 @@ class _VideoState extends State<Video> {
                                 height: 25,
                                 width: MediaQuery.of(context).size.width,
                                 child: Row(
+                                  // ignore: prefer_const_literals_to_create_immutables
                                   children: [
                                     Icon(
                                       Icons.forward,
@@ -192,6 +201,7 @@ class _VideoState extends State<Video> {
                                 height: 25,
                                 width: MediaQuery.of(context).size.width,
                                 child: Row(
+                                  // ignore: prefer_const_literals_to_create_immutables
                                   children: [
                                     Icon(
                                       Icons.video_camera_back,

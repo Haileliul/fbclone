@@ -14,36 +14,37 @@ class content extends StatelessWidget {
         children: [
           //   it is from here
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundImage: AssetImage(
                   'Assets/images/businessman-smiling-with-arms-crossed-on-white-background.jpg'),
             ),
             title: Row(
               children: [
-                Text("this is Tile for "),
-                Icon(
+                const Text("this is Tile for "),
+                const Icon(
                   Icons.circle_rounded,
                   size: 5,
                 ),
                 TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Follow",
                       style: TextStyle(color: Colors.blue),
                     ))
               ],
             ),
             subtitle: Row(
+              // ignore: prefer_const_literals_to_create_immutables
               children: [
-                Text("this is the sub title  . 1d ."),
-                Icon(
+                const Text("this is the sub title  . 1d ."),
+                const Icon(
                   Icons.circle_rounded,
                   size: 15,
                 )
               ],
             ),
             trailing: IconButton(
-              icon: Icon(Icons.more_horiz),
+              icon: const Icon(Icons.more_horiz),
               onPressed: () {},
             ),
           ),
@@ -54,22 +55,23 @@ class content extends StatelessWidget {
             // color: Colors.pink,
             child: video(),
           ),
-          Text(" this is the place where the text exist"),
+          const Text(" this is the place where the text exist"),
           SizedBox(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   child: Row(
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 9,
                         child: Icon(
                           Icons.thumb_up,
                           size: 10,
                         ),
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 9,
                         backgroundColor: Colors.red,
                         // backgroundColor: Colors.red,
@@ -78,11 +80,11 @@ class content extends StatelessWidget {
                           size: 10,
                         ),
                       ),
-                      Text("257K"),
+                      const Text("257K"),
                     ],
                   ),
                 ),
-                Text("20M Views"),
+                const Text("20M Views"),
               ],
             ),
           ),
@@ -92,27 +94,30 @@ class content extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 child: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    Icon(Icons.thumb_up_outlined),
-                    Text("89K"),
+                    const Icon(Icons.thumb_up_outlined),
+                    const Text("89K"),
                   ],
                 ),
               ),
               TextButton(
                 onPressed: () {},
                 child: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    Icon(Icons.messenger_outline),
-                    Text("89K"),
+                    const Icon(Icons.messenger_outline),
+                    const Text("89K"),
                   ],
                 ),
               ),
               TextButton(
                 onPressed: () {},
                 child: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    Icon(Icons.forward_rounded),
-                    Text("89K"),
+                    const Icon(Icons.forward_rounded),
+                    const Text("89K"),
                   ],
                 ),
               ),

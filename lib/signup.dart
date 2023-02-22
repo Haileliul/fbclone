@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import './Tabs/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -133,6 +135,7 @@ class signup extends StatelessWidget {
                                     decoration: InputDecoration(
                                       label: Text("Phone NUmber"),
                                       enabledBorder: OutlineInputBorder(
+                                        // ignore: prefer_const_constructors
                                         borderSide: BorderSide(
                                             width: 1, color: Colors.blue),
                                         // borderRadius: BorderRadius.circular(50),

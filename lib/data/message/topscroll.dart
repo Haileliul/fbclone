@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(myTop());
+void main() => runApp(const myTop());
 
 class myTop extends StatelessWidget {
   const myTop({super.key});
@@ -18,17 +18,18 @@ class myTop extends StatelessWidget {
           return InkWell(
             onTap: () {},
             child: Container(
-              margin: EdgeInsets.only(right: 10),
+              margin: const EdgeInsets.only(right: 10),
               child: Column(
+                // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: AssetImage(
                         'Assets/images/smiling-woman-point-finger-at-you.jpg'),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
-                  Text("Your Story"),
+                  const Text("Your Story"),
                 ],
               ),
             ),

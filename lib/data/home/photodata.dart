@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(RecentPhotos());
+void main() => runApp(const RecentPhotos());
 
 class RecentPhotos extends StatefulWidget {
   const RecentPhotos({super.key});
@@ -18,11 +18,11 @@ class _RecentPhotosState extends State<RecentPhotos> {
       height: MediaQuery.of(context).size.height * 0.2,
       // height: 50,
       // color: Colors.blue,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           // borderRadius: BorderRadius.circular(22),
           borderRadius: BorderRadius.all(Radius.circular(10)),
           // color: Colors.red,
-          image: const DecorationImage(
+          image: DecorationImage(
             image: AssetImage('Assets/images/cheerful-man-eating-poke.jpg'),
             fit: BoxFit.fill,
           )),
@@ -33,7 +33,7 @@ class _RecentPhotosState extends State<RecentPhotos> {
             image: AssetImage('Assets/images/cheerful-man-eating-poke.jpg'),
             fit: BoxFit.fill,
           ), */
-          Positioned.fill(
+          const Positioned.fill(
             child: Align(
               alignment: Alignment.bottomLeft,
               child: Text(
@@ -42,7 +42,7 @@ class _RecentPhotosState extends State<RecentPhotos> {
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
             child: Align(
               alignment: Alignment.topRight,
               child: CircleAvatar(
@@ -57,7 +57,7 @@ class _RecentPhotosState extends State<RecentPhotos> {
         ],
       ),
 
-      margin: EdgeInsets.symmetric(horizontal: 2),
+      margin: const EdgeInsets.symmetric(horizontal: 2),
     );
   }
 }

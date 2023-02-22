@@ -3,122 +3,122 @@ import 'package:switcher_button/switcher_button.dart';
 
 final List items = [
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Live videos.png'),
     ),
-    "title": Text("Live videos"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Live videos"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Messages.png'),
     ),
-    "title": Text("Messages"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Messages"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Groups.png'),
     ),
-    "title": Text("Groups"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Groups"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Friends.png'),
     ),
-    "title": Text("Friends"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Friends"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Videos.png'),
     ),
-    "title": Text("Videos"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Videos"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Marketplace.png'),
     ),
-    "title": Text("Marketplace"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Marketplace"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Pages.png'),
     ),
-    "title": Text("Pages"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Pages"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Saved.png'),
     ),
-    "title": Text("Saved"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Saved"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Wifi & cellular performance.png'),
     ),
-    "title": Text("Wifi & cellular performance"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Wifi & cellular performance"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Memories.png'),
     ),
-    "title": Text("Memories"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Memories"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Events .png'),
     ),
-    "title": Text("Events"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Events"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Games.png'),
     ),
-    "title": Text("Games"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Games"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Fantasy Games.png'),
     ),
-    "title": Text("Fantasy Games"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Fantasy Games"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Climate Science Center.png'),
     ),
-    "title": Text("Climate Science Center"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Climate Science Center"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Feeds.png'),
     ),
-    "title": Text("Feeds"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Feeds"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Settings.png'),
     ),
-    "title": Text("Settings"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Settings"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Dark mode .png'),
     ),
-    "title": Text("Dark mode"),
+    "title": const Text("Dark mode"),
     "post": SwitcherButton(
       onColor: Colors.lightBlueAccent,
       value: true,
@@ -128,59 +128,59 @@ final List items = [
     )
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Language.png'),
     ),
-    "title": Text("Language"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Language"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Data Saver.png'),
     ),
-    "title": Text("Data Saver"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Data Saver"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Clear Space.png'),
     ),
-    "title": Text("Clear Space"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Clear Space"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Help.png'),
     ),
-    "title": Text("Help"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Help"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Support index.png'),
     ),
-    "title": Text("Support inbox"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Support inbox"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/About.png'),
     ),
-    "title": Text("About"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("About"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Report a Problem.png'),
     ),
-    "title": Text("Report a Problem"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Report a Problem"),
+    "post": const Icon(Icons.bolt),
   },
   {
-    "pre": Image(
+    "pre": const Image(
       image: AssetImage('Assets/iconDrowr/Log out.png'),
     ),
-    "title": Text("Log out"),
-    "post": Icon(Icons.bolt),
+    "title": const Text("Log out"),
+    "post": const Icon(Icons.bolt),
   },
 ];

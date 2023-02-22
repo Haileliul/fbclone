@@ -1,6 +1,8 @@
+// ignore_for_file: sort_child_properties_last
+
 import 'package:flutter/material.dart';
 
-void main() => runApp(myList());
+void main() => runApp(const myList());
 
 class myList extends StatelessWidget {
   const myList({super.key});
@@ -8,17 +10,18 @@ class myList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      // ignore: prefer_const_constructors
       leading: CircleAvatar(
         radius: 40,
-        backgroundImage: AssetImage(
+        backgroundImage: const AssetImage(
           'Assets/images/shot-of-a-young-woman-going-for-a-road-trip-with-their-dog.jpg',
         ),
       ),
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("this your name "),
-          SizedBox(
+          const Text("this your name "),
+          const SizedBox(
             height: 10,
           ),
           Row(
@@ -27,7 +30,8 @@ class myList extends StatelessWidget {
                 flex: 1,
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(
+                  // ignore: sort_child_properties_last
+                  child: const Text(
                     "Confirm",
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
@@ -36,14 +40,14 @@ class myList extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all(Colors.blue)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Expanded(
                 flex: 1,
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Confirm",
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.bold),
@@ -56,7 +60,7 @@ class myList extends StatelessWidget {
           ),
         ],
       ),
-      trailing: Text(
+      trailing: const Text(
         "2d",
         style: TextStyle(color: Colors.red),
       ),

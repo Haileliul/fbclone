@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_interpolation_to_compose_strings
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -93,8 +95,8 @@ class _NotificState extends State<Notific> {
                           child: ListView.builder(
                             itemBuilder: (context, index) {
                               return ListTile(
-                                leading: Stack(
-                                    alignment: Alignment.bottomRight,
+                                leading: Stack(alignment: Alignment.bottomRight,
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       CircleAvatar(
                                         backgroundImage: AssetImage(
@@ -114,6 +116,7 @@ class _NotificState extends State<Notific> {
                                 title: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
+                                    // ignore: prefer_const_literals_to_create_immutables
                                     children: [
                                       Text(
                                         "Haileliule baye" + " " + "posted in",

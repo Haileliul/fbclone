@@ -14,7 +14,7 @@ class _HomePageState extends State<video> {
     super.initState();
     _controller = YoutubePlayerController(
       initialVideoId: '-BYWbosiYlw',
-      flags: YoutubePlayerFlags(
+      flags: const YoutubePlayerFlags(
         autoPlay: false,
         mute: true,
       ),
@@ -32,7 +32,7 @@ class _HomePageState extends State<video> {
             controller: _controller,
             showVideoProgressIndicator: true,
             progressIndicatorColor: Colors.amber,
-            progressColors: ProgressBarColors(
+            progressColors: const ProgressBarColors(
               playedColor: Colors.amber,
               handleColor: Colors.amberAccent,
             ),
